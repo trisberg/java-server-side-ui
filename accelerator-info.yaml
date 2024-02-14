@@ -1,0 +1,65 @@
+id: d5a0f9fe-4ec2-4c6d-8d19-8ecf33a5792a
+timestamp: 2024-02-14T20:50:31.317Z
+source: TAP-GUI
+username: tanzu-demo
+options:
+  projectName: java-server-side-ui
+  artifactId: server-side-ui-starter
+  groupId: com.example
+  packageName: com.example.serversideuistarter
+  buildTool: maven
+  includeAppSsoIntegration: true
+  javaVersion: 17
+  includeBuildToolWrapper: true
+  liveUpdateIDESupport: true
+  appssoOfferingName: demo
+accelerator:
+  name: java-server-side-ui
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+    subPath: java-server-side-ui
+    ref: main
+    commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
+fragments:
+  - name: app-sso-client
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/app-sso-client
+      ref: main
+      commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
+  - name: build-wrapper-gradle
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/build-wrapper-gradle
+      ref: main
+      commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
+  - name: build-wrapper-maven
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/build-wrapper-maven
+      ref: main
+      commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
+  - name: java-version
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/java-version
+      ref: main
+      commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
+  - name: live-update
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/live-update
+      ref: main
+      commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
+  - name: spring-boot-app-sso-auth-code-flow
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/spring-boot-app-sso-auth-code-flow
+      ref: main
+      commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
+  - name: tap-workload
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/tap-workload
+      ref: main
+      commit: 209d88570e3be6045e2633dfdd1c2ccda1fe441e
